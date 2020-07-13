@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display current date in Java script</title>
+</head>
+<body>
+   <script>
+   	  var today = new Date();
+     var dd = today.getDate();
+
+     var mm = today.getMonth()+1; 
+      var yyyy = today.getFullYear();
+      today = mm+'-'+dd+'-'+yyyy;
+      alert(today)
+      //console.log(today);
+      today = mm+'/'+dd+'/'+yyyy;
+      alert(today);
+      //console.log(today);
+      today = dd+'-'+mm+'-'+yyyy;
+      alert(today);
+      //console.log(today);
+      today = dd+'/'+mm+'/'+yyyy;
+      alert(today);
+      //console.log(today);
+   </script>
+</body>
+</html>
