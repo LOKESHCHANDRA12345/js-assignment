@@ -1,0 +1,15 @@
+1.Boolean:
+         represents a logical entity and can have two values: true and false. 
+2.Null:
+        The Null type has exactly one value.It represents the intentional absence of any object value
+ 
+3.String: 
+        A string (or a text string) is a series of characters. You can use single or double quotes
+
+
+4.  Arrays:
+         Arrays are written with square brackets.Array items are separated by commas.
+
+
+5.Undefined:
+         In JavaScript, a variable without a value, has the value undefined. The type is also undefined.
