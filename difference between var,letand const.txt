@@ -1,0 +1,38 @@
+var: The scope of a variable defined with the keyword “var” is limited to the “function” within which it is defined. If it is defined outside any function, the scope of the variable is global.
+var is “function scoped”.
+ 
+example:var x = 1;
+
+if (x === 1) {
+  var x = 2;
+
+  console.log(x);
+//Here the output will be 2
+  
+}
+
+console.log(x);
+//Here the output will be 2
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+ let: The scope of a variable defined with the keyword “let” or “const” is limited to the “block” defined by curly braces i.e. {} .
+       “let” and “const” are“block scoped”.
+Example:
+let x = 1;
+
+if (x === 1) {
+  let x = 2;
+
+  console.log(x);
+  // expected output: 2
+}
+
+console.log(x);
+// expected output: 1
+
+
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------
+const: The scope of a variable defined with the keyword “const” is limited to the block defined by curly braces. However if a variable is defined with keyword const, it cannot be reassigned.
+“const” cannot be re-assigned to a new value. However it CAN be mutated.
+
