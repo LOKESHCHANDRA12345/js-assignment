@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Prime range </title>
+</head>
+<body>
+     <script >
+     	let n=prompt("enter the value of n");
+     	nextPrime:
+     	for (let i = 2; i <= n; i++)
+     	{
+     		for (let j = 2; j < i; j++)
+     		{
+     			if (i % j == 0) continue nextPrime; 
+
+     		}
+     		console.log(i);
+     	}
+
+
+
+     </script>
+</body>
+</html>

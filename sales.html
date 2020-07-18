@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sales sal increment</title>
+</head>
+<body>
+   <script>
+   	let sales=prompt("enter the sales done by employee");
+   	let salary = 10000;
+   	let reward;
+   	if(sales>=0 && sales<=5000)
+   	{
+   		reward=salary+0.02*salary;
+   		console.log(reward);
+   	}
+   	else if(sales>5000 && sales<=10000)
+   	{
+   		reward=salary+0.05*salary;
+   		console.log(reward);
+   	}
+   	else if(sales>10000 && sales<=20000)
+   	{
+   		reward=salary+0.07*salary;
+   		console.log(reward);
+   	}
+   	else
+   	{
+   		reward=salary+0.1*salary;
+   		console.log(reward);
+   	}
+
+
+
+
+   </script>
+</body>
+</html>

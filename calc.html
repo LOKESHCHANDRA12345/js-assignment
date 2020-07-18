@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator Operations</title>
+</head>
+<body>
+   <script >
+   	 let operator=prompt("enter the operation you are interested");
+   	 let number1=prompt("enter 1st number");
+   	 let number2= prompt("enter 2nd number");
+
+   	 switch(operator)
+   	 {
+        case'+':
+           console.log("Addition of two numbers is: " + (number1 + number2));
+           break;
+        case'-':
+           console.log("subtraction of two numbers is: " + (number1 - number2));
+           break;
+        case'*':
+           console.log("multiplication of two numbers is: " + (number1 * number2));
+           break;
+        case'/':
+           console.log("Division of two numbers is: " + (number1 / number2));
+           break;
+           
+        case'squrt':
+           console.log("Square root  of two numbers is: " + (Math.sqrt(number1)));
+           break;
+        case'%':
+           console.log("modulo of two numbers is: " + (number1 % number2));
+           break;
+
+   	 }
+   </script>
+</body>
+</html>
