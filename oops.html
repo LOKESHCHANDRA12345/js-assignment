@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>OOPS</title>
+</head>
+<body>
+   <script>
+   	class User 
+   	{
+      constructor(name, age,email)
+      {
+        this.name = name;
+        this.age = age;
+        this.email = email;
+        this.lucoins = 0;
+        this.courses = [];
+      }
+      login()
+       {
+         console.log(`${this.name} has logged in`);
+         return this;
+       }
+       logout()
+       {
+          console.log(`${this.name} has logged out`);
+          return this;
+       }  
+    }
+
+    class Moderator extends User
+    {
+       this.lucoins = 0;
+      
+      addcoins(user)
+      {
+      	users=users.filter(u =>{
+      		if(u.email==user.email)
+      		{
+      			this.lucoins++;
+      			return this;
+      		}
+      		
+      		else
+      		{
+      			 this.lucoins--;
+      			 return this;
+      		}
+      	})
+      }
+    }
+    class Admin extends Moderator
+    {
+    	addCourse(user,course)
+    	{
+    		user.courses.push(course);
+    		console.log(user);
+    		console.log(course);
+    	}
+    	deleteCourse(user,course)
+    	{
+    		user.courses.pop(course);
+    		console.log(user);
+
+    	}
+    }
+    let user1=new User('Lokesh',61,'loki@gmail.com');
+    let user2=new User('Vishal',58,'Vishal@gmail.com');
+    let user3=new User('Harsha',61,'Hrsh@gmail.com');
+    let user4=new User('Hemanth',61,'dictator@gmail.com');
+    let user5=new User('abhijith',61,'abhi@gmail.com');
+    let mod=new Moderator('Modi',99,'pm@gmail.com');
+    let admin=new Admin('kaikala',87,'admin@gmail.com');
+    let users=[user1,user2,user3,user4,user5,mod,admin];
+    users.forEach(element =>{
+    	console.log(element);
+    });
+    
+    admin.addCourse(user2,'python');
+    admin.deleteCourse(user2,'Python');
+    admin.addCourse(user3,'JavaScript');
+    user1.login()
+    mod.addcoins(user1);
+    mod.addcoins(user2);
+    mod.addcoins(user1);
+    user1.logout()
+   </script>
+</body>
+</html>
