@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Color changing </title>
+</head>
+<body onload="changecolor()">
+	<script >
+		let c=["blue","black","yellow","green","red"];
+		let currentColorIndex=0;
+		function changecolor()
+		{
+			document.bgColor=c[currentColorIndex];
+			currentColorIndex=(currentColorIndex+1)%c.length;
+			setTimeout(changecolor,5000);
+		}
+
+	</script>
+
+</body>
+</html>
