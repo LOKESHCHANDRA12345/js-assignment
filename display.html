@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Display and welcomings</title>
+</head>
+<body>
+	<button onclick="myFunction()">SWITCH TO DARK MODE</button>
+	<h3 id="time">Time</h3>
+	<style>
+	 body{
+	 	padding:25 px;
+	 	background-color: white;
+	 	color:black;
+	 	font-size: 25px;
+	 }
+	 .dark-mode
+	 {
+	 	background-color: black;
+	 	color:white;
+	 }
+	</style>
+    <script>
+    	let n=prompt("enter the name of customer");
+    	console.log(`Welcome ${n}`);
+    	const ctime=document.getElementById('time');
+    	function clock()
+    	{
+    		let date=new Date();
+    		let time=date.toLocaleTimeString();
+    		ctime.innerText=time;
+    	}
+    	clock();
+    	setInterval(clock,1000);
+    	function myFunction()
+    	{
+    		var element=document.body;
+    		element.classList.toggle("dark-mode");
+    	}
+    	
+
+    </script>
+</body>
+</html>
